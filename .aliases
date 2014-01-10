@@ -1,0 +1,25 @@
+alias l='ls -lphG'
+alias ll='l -A'
+
+alias dsbw='ssh kulikov@dsbw.ru'
+alias fast='ssh root@kulikovd.ru'
+
+alias scout-main='ec ec2-54-247-81-168.eu-west-1.compute.amazonaws.com'
+
+alias w='which'
+alias aalias='vi ~/.dotfiles/.aliases && source ~/.dotfiles/.aliases'
+
+alias ec='ssh -A -i ~/.ssh/digsolab.pem -l ubuntu'
+alias e="cd ~/Work/euler"
+alias ew="cd ~/Work/euler-wiki"
+
+alias hi='history | grep $1'
+alias st="git status"
+alias ga="git add . && git st"
+alias gc="git add . && git commit -am"
+alias log="git log --pretty=format:'%C(yellow)%h%Creset - %Cblue%an, %Cgreen%ar:%Creset %s' --all --decorate --graph -n 50"
+alias logs="git log --decorate --all --stat --graph -n 30"
+alias out="git fetch dsl master; git log --pretty=format:'%C(yellow)%h%Creset - %Cblue%an, %Cgreen%ar:%Creset %s' --decorate --graph FETCH_HEAD.."
+alias in="git fetch dsl master; git log --pretty=format:'%C(yellow)%h%Creset - %Cblue%an, %Cgreen%ar:%Creset %s' --decorate --graph ..FETCH_HEAD"
+alias tl="tail -f -n 1000"
+alias pg="ps aux | grep $1"

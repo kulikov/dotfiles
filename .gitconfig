@@ -1,0 +1,30 @@
+[user]
+	name = kulikov
+	email = kulikov.dm@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	in = "!git remote update -p; git log ..@{u}"
+	out = log @{u}..
+	up = !(git add . && git stash && git pull --rebase >&2) | grep -v \"No local changes to save\" && git stash pop
+	d = difftool
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+[core]
+	excludesfile = ~/.dotfiles/.gitignore_global
+	autocrlf = input
+[difftool]
+	prompt = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = matching
+[diff]
+	tool = vimdiff
