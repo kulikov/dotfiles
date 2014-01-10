@@ -14,7 +14,6 @@ export PATH=$HOME/.dotfiles/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share
 export SCALA_HOME=/usr/local/Cellar/scala/2.10.3/libexec
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=utf-8"
-export PRISMATIC_UPLOAD_PATH="root@kulikovd.ru:/var/www/prismatic-feed/"
 export ANDROID_HOME="/tmp" # for sbt assembly
 
 source ~/.dotfiles/.aliases
